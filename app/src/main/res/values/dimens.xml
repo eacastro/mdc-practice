@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="img_side">90dp</dimen>
+    <dimen name="padding_min">16dp</dimen>
+    <dimen name="margin_min">8dp</dimen>
+    <dimen name="img_width">50dp</dimen>
+    <dimen name="img_height">80dp</dimen>
+    <dimen name="card_elevation_default">8dp</dimen>
+    <dimen name="button_elevation_default">8dp</dimen>
+    <dimen name="margin_double">16dp</dimen>
+</resources>
