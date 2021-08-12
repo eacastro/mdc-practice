@@ -98,51 +98,74 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/padding_min">
 
-                <TextView
-                    android:id="@+id/formCardTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/card_title"
-                    android:textAppearance="?attr/textAppearanceHeadline5"
+                <ImageView
+                    android:id="@+id/imgUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_url_height"
+                    android:background="@color/teal_200"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/userField"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/cardFormTitle"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_min"
-                    android:hint="@string/user_field_hint"
-                    app:endIconMode="clear_text"
-                    app:helperText="@string/text_field_helper_text"
+                    android:text="@string/card_title"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/formCardTitle">
+                    app:layout_constraintTop_toBottomOf="@id/imgUrl" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/urlField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_min"
+                    android:hint="@string/url_field_hint"
+                    app:endIconMode="clear_text"
+                    app:helperText="@string/helper_generic_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardFormTitle">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
+
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordField"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_min"
+                    android:enabled="false"
                     android:hint="@string/password_field_hint"
                     app:endIconMode="password_toggle"
-                    app:helperText="@string/text_field_helper_text"
+                    app:helperText="@string/helper_generic_text"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/userField">
+                    app:layout_constraintTop_toBottomOf="@id/urlField">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
+                        android:layout_height="match_parent" />
+
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkbox_text"
+                    app:layout_constraintStart_toStartOf="@id/passwordField"
+                    app:layout_constraintTop_toBottomOf="@id/passwordField" />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>

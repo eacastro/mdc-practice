@@ -13,7 +13,7 @@
             android:name=".ScrollingActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MDCPractice.LoginActivity">
+            android:theme="@style/Theme.MDCPractice">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

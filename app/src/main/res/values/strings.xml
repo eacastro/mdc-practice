@@ -98,4 +98,7 @@
     <string name="password_field_hint">Password</string>
     <string name="text_field_helper_text">This field is required</string>
     <string name="login_btn_text">sign in</string>
+    <string name="url_field_hint">Url</string>
+    <string name="helper_generic_text">This field is required</string>
+    <string name="checkbox_text">Enable password</string>
 </resources>
