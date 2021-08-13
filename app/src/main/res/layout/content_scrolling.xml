@@ -109,7 +109,7 @@
 
                 <TextView
                     android:id="@+id/cardFormTitle"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_min"
                     android:text="@string/card_title"
@@ -160,12 +160,42 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/cbxEnablePass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/checkbox_text"
                     app:layout_constraintStart_toStartOf="@id/passwordField"
                     app:layout_constraintTop_toBottomOf="@id/passwordField" />
 
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/divider_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/cbxEnablePass"
+                    app:layout_constraintTop_toBottomOf="@id/cbxEnablePass" />
+
+                <TextView
+                    android:id="@+id/tvSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/card_title"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    app:layout_constraintStart_toStartOf="@id/cardFormTitle"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_double"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="@string/large_text"
+                    app:layout_constraintStart_toStartOf="@id/tvSubtitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>

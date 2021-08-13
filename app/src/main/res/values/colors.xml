@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lipstick_red">#E63946</color>
+    <color name="divider_color">#1e000000</color>
 
 </resources>
