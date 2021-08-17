@@ -104,6 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/img_url_height"
                     android:background="@color/teal_200"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -200,24 +201,44 @@
                     app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
 
                 <com.google.android.material.button.MaterialButtonToggleGroup
-                    android:id="@+id/btnToggleGroup"
+                    android:id="@+id/toogle_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_double"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardTextPreview">
+                    app:layout_constraintTop_toBottomOf="@id/cardTextPreview">
 
-                    <com.google.android.material.button.MaterialButton
+                    <Button
+                        android:id="@+id/btnRed"
+                        style="?attr/materialButtonOutlinedStyle"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_toggle_red" />
+
+                    <Button
+                        android:id="@+id/btnBlue"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_toggle_blue" />
+
+                    <Button
+                        android:id="@+id/btnGreen"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_toggle_green" />
 
 
                 </com.google.android.material.button.MaterialButtonToggleGroup>
 
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.button.MaterialButton
+
+        <!--<com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -226,7 +247,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/cardForm"
             app:layout_constraintStart_toStartOf="@id/cardForm"
-            app:layout_constraintTop_toBottomOf="@id/cardForm" />
+            app:layout_constraintTop_toBottomOf="@id/cardForm" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
